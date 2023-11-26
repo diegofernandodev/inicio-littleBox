@@ -1,0 +1,83 @@
+*{
+    padding: O;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor-header{
+    width: 100%;
+    max-height: 100hv;
+}
+/* .contenedor-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 10;
+} */
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 20;
+    top: 0; /* Puedes ajustar la posición superior según sea necesario */
+    left: 0; /* Puedes ajustar la posición izquierda según sea necesario */
+    width: 100%; /* Ancho completo de la pantalla */
+    /*background-color: #ffffff;  Fondo del menú */
+    /* Otras propiedades de estilo que desees */
+}
+.contenedor-img{
+    width: 180px;
+    height: auto;
+    overflow: hidden;    
+}
+.contenedor-img a img{
+    width: 100%;
+    height: auto;
+}
+.contenedor-sesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linea-vertical{
+    border: none;
+    border-left: 1px solid #ccc; /* Establece el estilo de línea vertical */
+    height: 35px; /* Ajusta la altura de la línea según sea necesario */
+    margin: 0 10px; /* Ajusta el margen para separar la línea de los botones */
+}
+/* Aplicar una lámina negra semitransparente encima del carrusel */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+    z-index: 9;
+}
+.carousel-control-prev{
+    z-index: 10;
+}
+.carousel-control-next{
+    z-index: 10;
+}
+/* Estilo para el texto dentro de la lámina negra */
+.carousel-caption {
+    color: #fff; /* Color del texto blanco */
+    text-align: center; /* Centrar el texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.carousel-caption h3{
+    font-size: 3rem;
+    z-index: 10;
+}
+.carousel-caption p{
+    font-size: 1.5rem;
+    z-index: 10;
+}

@@ -1,0 +1,13 @@
+.btn-foto{
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.contenedor-sesion a img{
+    width: 2rem;
+    height: 2rem;
+}
+.hidden {
+    display: none;
+  }
